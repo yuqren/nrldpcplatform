@@ -18,7 +18,7 @@ We have the following directories:
 
 Please run nr_ldpc_platform.m to start the simulation.
 
-Here are some optional configurations for 5G-NR LDPC decoding. The settings align with~$\mathcal{C}_{\text{5G}}^{\text{I}}$ in [[paper]](https://arxiv.org/abs/2410.16875), which adopts a multi-core architecture.
+Here are some optional configurations for 5G-NR LDPC decoding. The settings align with C_{5G}^{I} in [[paper]](https://arxiv.org/abs/2410.16875), which adopts a multi-core architecture.
 ```
 NR-LDPC (R=0.87)
 TxRx.bgn         = 1;                 
