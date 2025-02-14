@@ -121,7 +121,7 @@ for i_run = 1 : TxRx.frame : TxRx.maxFrames
             rxcbs      = zeros(TxRx.group, size(chOut, 1));
             thisIteras = zeros(TxRx.group, 1);
             parfor i_group = 1:TxRx.group % self-defined mex file
-                [rxcbs(i_group, :), thisIteras(i_group)] = ldpc_layered_nms_float_mex(bgVec, TxRx.norm, TxRx.Z, TxRx.maxIteras, bgRows, bgCols, TxRx.frame/TxRx.group, chOut(:, i_group)', 1:bgCols);
+                [rxcbs(i_group, :), thisIteras(i_group)] = ldpc_layered_nms_float_mex(bgVec, TxRx.norm, TxRx.Z, TxRx.maxIteras, bgRows, bgCols, TxRx.frame/TxRx.group, chOut(:, i_group)', 1:bgRows);
             end
         else
             rxcbs      = zeros(TxRx.frame, size(chOut, 1));
